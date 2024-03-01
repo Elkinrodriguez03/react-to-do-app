@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Todo App with React, TypeScript, and Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a professional-grade Todo application built using React, TypeScript, Redux, and other modern tools. The app allows users to create tasks, edit them, mark them as completed, and view task details. Additionally, there’s a separate section to view completed todos.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add new tasks with a title and description.
+- Edit existing tasks.
+- Mark tasks as completed.
+- View task details (including description).
+- List completed todos separately.
 
-### `yarn start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Follow these steps to set up and run the project locally:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the Repository:
 
-### `yarn test`
+```git clone https://github.com/your-username/todo-app.git
+cd todo-app
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install Dependencies:
 
-### `yarn build`
+```yarn install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the Development Server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open in Browser: 
 
-### `yarn eject`
+Open your browser and navigate to http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project follows a clean and organized structure:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```src/
+Components/: Reusable React components.
+Provider/: Redux reducers.
+Utils/: Utility functions.
+Components/Home/Home.tsx: Root component of the app.
+index.tsx: Renders the root component and mounts it to the DOM.
+package.json: Lists dependencies.
+README.md: Describes the app and its features (you’re reading it!).
+tsconfig.json: TypeScript compiler configuration.
+yarn.lock: Lock file for exact dependency versions.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies Used
+- React
+- TypeScript
+- Redux (for state management)
+- Jest (for testing)
+- ESLint and Prettier (for code quality)
 
-## Learn More
+### License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the LICENSE file for details.

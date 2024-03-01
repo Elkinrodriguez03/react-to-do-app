@@ -4,6 +4,7 @@ module.exports = {
       jest: true,
       node: true,
     },
+    plugins: ["@typescript-eslint", "react"],
     extends: [
       "react-app",
       "eslint:recommended",
@@ -19,6 +20,9 @@ module.exports = {
       },
       sourceType: "module",
     },
-    plugins: ["@typescript-eslint", "react"],
-
+    settings: {
+      'import/resolver': {
+        typescript: {},
+      }
+    }
 };
