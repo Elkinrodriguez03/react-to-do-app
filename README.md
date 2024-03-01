@@ -56,11 +56,18 @@ yarn.lock: Lock file for exact dependency versions.
  ```
 
 ## Technologies Used
+
 - React
 - TypeScript
 - Redux (for state management)
 - Jest (for testing)
 - ESLint and Prettier (for code quality)
+
+## Deploy
+
+The applilcation is deployed in Vercel, getting connection with the GitHub repository for CI/CD. Link:
+
+https://react-to-do-app-kohl.vercel.app/
 
 ### License
 
