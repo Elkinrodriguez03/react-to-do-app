@@ -16,18 +16,21 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the Repository:
 
-```git clone https://github.com/your-username/todo-app.git
+```
+git clone https://github.com/your-username/todo-app.git
 cd todo-app
 ```
 
 2. Install Dependencies:
 
-```yarn install
+```
+yarn install
 ```
 
 3. Start the Development Server:
 
-```yarn start
+```
+yarn start
 ```
 
 4. Open in Browser: 
@@ -38,7 +41,8 @@ Open your browser and navigate to http://localhost:3000.
 
 The project follows a clean and organized structure:
 
-```src/
+``` 
+src/
 Components/: Reusable React components.
 Provider/: Redux reducers.
 Utils/: Utility functions.
@@ -48,7 +52,8 @@ package.json: Lists dependencies.
 README.md: Describes the app and its features (you’re reading it!).
 tsconfig.json: TypeScript compiler configuration.
 yarn.lock: Lock file for exact dependency versions.
-```
+ 
+ ```
 
 ## Technologies Used
 - React
