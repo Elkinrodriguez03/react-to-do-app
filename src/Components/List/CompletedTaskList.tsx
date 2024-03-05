@@ -19,7 +19,7 @@ const CompletedTaskList = () => {
             <Stack horizontal key={task.id} className={TaskListStyle.taskItem}>
                 <Stack 
                     horizontal 
-                    style={{ width: "85%" }}
+                    style={{ width: "80%" }}
                     className={TaskListStyle.disabled}
                 >
                     <Checkbox checked />
@@ -27,7 +27,7 @@ const CompletedTaskList = () => {
                 </Stack>
                 <Stack 
                     horizontal 
-                    style={{ width: "15%" }}
+                    style={{ width: "20%", justifyContent: "end" }}
                     className={TaskListStyle.disabled}
                 >
                     <FontIcon 

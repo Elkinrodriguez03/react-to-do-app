@@ -18,15 +18,24 @@ const HomeStyle: IProcessedStyleSet<IHomeStyle> = mergeStyleSets({
         backgroundColor: "#EEEDEB",
         transform: "translate(-50%, -50%)",
         boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
-        borderRadius: "30px"
+        borderRadius: "30px",
+        '@media screen and (max-width: 800px)': {
+            width: "90%",
+            height: "auto",
+            minHeight: "40%",
+            borderRadius: "20px",
+            position: "absolute",
+            top: "40%",         
+        }
     },
     contentContainer: {
-        margin: 0,
-        padding: "0 10px 30px 10px",
+        margin: "0px 10px 20px",
+        //padding: "10px 10px 30px 10px",
         overflow: "hidden",
         overflowY: "scroll",
-        maxHeight: "370px"
-        
+        boxSizing: "content-box",
+        maxHeight: "500px", 
+             
     },
     headerStyle: {
         height: 80,

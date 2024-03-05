@@ -26,6 +26,9 @@ const TaskListStyle: IProcessedStyleSet<ItaskListStyle> = mergeStyleSets({
         margin: "0 3px",
         selectors: {
             "&:hover": {cursor: "pointer"},
+        },
+        '@media screen and (max-width: 800px)': {
+                fontSize: 15,
         }
     },
     disabled: {
@@ -35,6 +38,10 @@ const TaskListStyle: IProcessedStyleSet<ItaskListStyle> = mergeStyleSets({
         selectors: {
             "&:hover": { cursor: "defaul" },
         },
+
+        '@media screen and (max-width: 800px)': {
+            fontSize: 15,
+    }
     }
 });
 

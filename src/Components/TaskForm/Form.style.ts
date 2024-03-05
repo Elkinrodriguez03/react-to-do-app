@@ -19,6 +19,11 @@ const TaskFormStyle: IProcessedStyleSet<ITaskForm> = mergeStyleSets({
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        borderRadius: "30px",
+        '@media screen and (max-width: 800px)': {
+            position: "fixed",
+            top: 80,
+        }
     },
     labelForm: {
         textAlign: "center",
@@ -26,7 +31,7 @@ const TaskFormStyle: IProcessedStyleSet<ITaskForm> = mergeStyleSets({
         fontSize: "20px",
         width: "100%",
         color: "#1E1E1F",
-        marginBottom: "27px",
+        marginBottom: "27px"
     },
     buttonContainer: {
         marginTop: "15px",

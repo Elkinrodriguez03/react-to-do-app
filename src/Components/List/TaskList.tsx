@@ -27,13 +27,13 @@ const TaskList = ({ setEditTask }: Props) => {
     const onRenderCell = (task: ITask) => {
         return (
             <Stack horizontal key={task.id} className={TaskListStyle.taskItem}>
-                <Stack horizontal style={{ width: "85%" }}>
+                <Stack horizontal style={{ width: "80%" }}>
                     <Checkbox onChange={() => {
                         checkboxHandler(task.id)
                     }} />
                     {task.title}
                 </Stack>
-                <Stack horizontal style={{ width: "15%" }}>
+                <Stack horizontal style={{ width: "20%", justifyContent: "end" }}>
                     <TaskDescription task={task} />
                     <FontIcon
                         iconName="Edit" className={TaskListStyle.iconStyle}
